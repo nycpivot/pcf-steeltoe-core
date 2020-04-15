@@ -1,0 +1,59 @@
+﻿<style>
+    td {
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px;
+    }
+</style>
+
+<h2>App Settings</h2>
+
+<br />
+
+<table>
+    <tr>
+        <td>1.</td>
+        <td>Define an app settings file for the appropriate environment.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>
+            <img src="~/img/appsettings.production.png" />
+            <br />
+            <br />
+            <img src="~/img/web-appsettings.png" />
+        </td>
+    </tr>
+    <tr>
+        <td>2.</td>
+        <td>Specify the respective environment in the manifest file.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td><img src="~/img/web-manifest.png" /></td>
+    </tr>
+    @*<tr>
+        <td>3.</td>
+        <td>Setup the configuration in the Program.cs file.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td><img src="~/img/web-program-add-json-files.png" /></td>
+    </tr>*@
+    <tr>
+        <td>3.</td>
+        <td>Read the setting when opening the Configuration...App Settings page.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td><img src="~/img/web-app-settings-controller.png" /></td>
+    </tr>
+    <tr>
+        <td>4.</td>
+        <td>Output the result to the browser.</td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>@ViewBag.ConnectionString</td>
+    </tr>
+</table>

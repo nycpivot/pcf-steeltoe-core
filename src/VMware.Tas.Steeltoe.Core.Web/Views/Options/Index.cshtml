@@ -1,0 +1,128 @@
+﻿<h2>Options</h2>
+
+<h3>Application Name</h3>
+<img src="~/img/options-application-name.png" />
+<br />
+<h4>@ViewBag.ApplicationName</h4>
+
+<hr />
+
+<h3>VCAP_APPLICATION</h3>
+<table class="table table-striped">
+    <tr>
+        <td>Application Id</td>
+        <td>@ViewBag.ApplicationId</td>
+    </tr>
+    <tr>
+        <td>Application Name</td>
+        <td>@ViewBag.ApplicationName</td>
+    </tr>
+    <tr>
+        <td>URI</td>
+        <td>@ViewBag.Uri</td>
+    </tr>
+    <tr>
+        <td>Application Version</td>
+        <td>@ViewBag.ApplicationVersion</td>
+    </tr>
+    <tr>
+        <td>API</td>
+        <td>@ViewBag.CloudFoundryApi</td>
+    </tr>
+    <tr>
+        <td>Disk Limit</td>
+        <td>@ViewBag.DiskLimit</td>
+    </tr>
+    <tr>
+        <td>Instance Index</td>
+        <td>@ViewBag.InstanceIndex</td>
+    </tr>
+    <tr>
+        <td>Instance Id</td>
+        <td>@ViewBag.InstanceId</td>
+    </tr>
+    <tr>
+        <td>Instance IP</td>
+        <td>@ViewBag.InstanceIp</td>
+    </tr>
+    <tr>
+        <td>Internal IP</td>
+        <td>@ViewBag.InternalIp</td>
+    </tr>
+    <tr>
+        <td>Limits</td>
+        <td>@ViewBag.Limits</td>
+    </tr>
+    <tr>
+        <td>Memory Limit</td>
+        <td>@ViewBag.MemoryLimit</td>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>@ViewBag.Name</td>
+    </tr>
+    <tr>
+        <td>Port</td>
+        <td>@ViewBag.Port</td>
+    </tr>
+    <tr>
+        <td>Space Id</td>
+        <td>@ViewBag.SpaceId</td>
+    </tr>
+    <tr>
+        <td>Space Name</td>
+        <td>@ViewBag.SpaceName</td>
+    </tr>
+</table>
+
+<hr />
+
+<h3>VCAP_SERVICES</h3>
+@foreach (var service in ViewBag.Services)
+{
+    <table class="table table-striped">
+        <tr>
+            <td style="width: 100px;">Label</td>
+            <td style="font-weight: bold;">@service.Label</td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>@service.Name</td>
+        </tr>
+        <tr>
+            <td>Plan</td>
+            <td>@service.Plan</td>
+        </tr>
+    </table>
+    <br />
+}
+
+<hr />
+
+<table class="table table-striped">
+    <tr>
+        <td>Provider</td>
+        <td>@ViewBag.Cups.Provider</td>
+    </tr>
+    <tr>
+        <td>Server</td>
+        <td>@ViewBag.Cups.Server</td>
+    </tr>
+    <tr>
+        <td>Port</td>
+        <td>@ViewBag.Cups.Port</td>
+    </tr>
+    <tr>
+        <td>Database</td>
+        <td>@ViewBag.Cups.Database</td>
+    </tr>
+    <tr>
+        <td>UserId</td>
+        <td>@ViewBag.Cups.UserId</td>
+    </tr>
+    <tr>
+        <td>Password</td>
+        <td>@ViewBag.Cups.Password</td>
+    </tr>
+</table>
+<br />
