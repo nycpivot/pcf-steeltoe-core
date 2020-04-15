@@ -27,7 +27,6 @@ C:\Projects\pcf-steeltoe-core\src\VMware.Tas.Steeltoe.Core.Hystrix.Api\bin\Debug
 C:\Projects\pcf-steeltoe-core\src\VMware.Tas.Steeltoe.Core.Hystrix.Api\bin\Debug\netcoreapp3.0\Steeltoe.Discovery.EurekaBase.dll
 C:\Projects\pcf-steeltoe-core\src\VMware.Tas.Steeltoe.Core.Hystrix.Api\bin\Debug\netcoreapp3.0\runtimes\unix\lib\netstandard1.3\System.Net.Http.WinHttpHandler.dll
 C:\Projects\pcf-steeltoe-core\src\VMware.Tas.Steeltoe.Core.Hystrix.Api\bin\Debug\netcoreapp3.0\runtimes\win\lib\netstandard1.3\System.Net.Http.WinHttpHandler.dll
-C:\Projects\pcf-steeltoe-core\src\VMware.Tas.Steeltoe.Core.Hystrix.Api\obj\Debug\netcoreapp3.0\VMware.Tas.Steeltoe.Core.Hystrix.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Projects\pcf-steeltoe-core\src\VMware.Tas.Steeltoe.Core.Hystrix.Api\obj\Debug\netcoreapp3.0\VMware.Tas.Steeltoe.Core.Hystrix.Api.dll
 C:\Projects\pcf-steeltoe-core\src\VMware.Tas.Steeltoe.Core.Hystrix.Api\obj\Debug\netcoreapp3.0\VMware.Tas.Steeltoe.Core.Hystrix.Api.pdb
 C:\Projects\pcf-steeltoe-core\src\VMware.Tas.Steeltoe.Core.Hystrix.Api\bin\Debug\netcoreapp3.0\cf-push.bat

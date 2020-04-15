@@ -1,13 +1,14 @@
 ﻿---
 applications:
--   name: pcf-steeltoe-dotnet-core-web
-    buildpack: dotnet_core_buildpack
+-   name: tas-steeltoe-core-web
+    buildpacks:
+    -   dotnet_core_buildpack
     disk_quota: 512M
     memory: 512M
     services:
-    -   pcf-config-server
-    -   pcf-service-registry
-    -   pcf-circuit-breaker-dashboard
-    -   pcf-cups-database
+    -   tas-config-server
+    -   tas-service-registry
+    -   tas-circuit-breaker-dashboard
+    -   tas-cups-database
     env:
         ASPNETCORE_ENVIRONMENT: production

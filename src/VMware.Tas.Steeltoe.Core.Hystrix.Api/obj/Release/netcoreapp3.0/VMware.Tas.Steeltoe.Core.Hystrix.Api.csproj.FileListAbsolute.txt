@@ -32,3 +32,5 @@ C:\Projects\pcf-steeltoe-core\src\VMware.Tas.Steeltoe.Core.Hystrix.Api\obj\Relea
 C:\Projects\pcf-steeltoe-core\src\VMware.Tas.Steeltoe.Core.Hystrix.Api\obj\Release\netcoreapp3.0\VMware.Tas.Steeltoe.Core.Hystrix.Api.csproj.CopyComplete
 C:\Projects\pcf-steeltoe-core\src\VMware.Tas.Steeltoe.Core.Hystrix.Api\obj\Release\netcoreapp3.0\VMware.Tas.Steeltoe.Core.Hystrix.Api.dll
 C:\Projects\pcf-steeltoe-core\src\VMware.Tas.Steeltoe.Core.Hystrix.Api\obj\Release\netcoreapp3.0\VMware.Tas.Steeltoe.Core.Hystrix.Api.pdb
+C:\Projects\pcf-steeltoe-core\src\VMware.Tas.Steeltoe.Core.Hystrix.Api\bin\Release\netcoreapp3.0\Microsoft.Extensions.Caching.Redis.dll
+C:\Projects\pcf-steeltoe-core\src\VMware.Tas.Steeltoe.Core.Hystrix.Api\bin\Release\netcoreapp3.0\StackExchange.Redis.StrongName.dll

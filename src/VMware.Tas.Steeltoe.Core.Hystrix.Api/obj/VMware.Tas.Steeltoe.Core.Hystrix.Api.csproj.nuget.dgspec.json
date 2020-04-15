@@ -42,6 +42,10 @@
       "frameworks": {
         "netcoreapp3.0": {
           "dependencies": {
+            "Microsoft.Extensions.Caching.Redis": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Steeltoe.CloudFoundry.ConnectorCore": {
               "target": "Package",
               "version": "[2.4.3, )"

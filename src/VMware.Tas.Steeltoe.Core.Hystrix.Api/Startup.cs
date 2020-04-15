@@ -39,9 +39,18 @@ namespace VMware.Tas.Steeltoe.Core.Hystrix.Api
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseDiscoveryClient();
+            app.UseHttpsRedirection();
 
-            app.UseMvc();
+            app.UseRouting();
+
+            app.UseAuthorization();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
+
+            app.UseDiscoveryClient();
 
             ProductsService.Load(app.ApplicationServices);
         }

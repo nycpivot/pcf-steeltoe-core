@@ -1,8 +1,8 @@
-cf target -s pcf-steeltoe
+cf target -s tas-steeltoe-core
 pause
 @cls
 
-cf delete pcf-steeltoe-dotnet-core-web -r -f
+cf delete tas-steeltoe-core-web -r -f
 pause
 @cls
 
