@@ -3,11 +3,12 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Pcf.Steeltoe.Dotnet.Core.Hystrix.Api.Services;
+using VMware.Tas.Steeltoe.Core.Hystrix.Api.Services;
 using Steeltoe.CloudFoundry.Connector.Redis;
 using Steeltoe.Discovery.Client;
+using Microsoft.Extensions.Hosting;
 
-namespace Pcf.Steeltoe.Dotnet.Core.Hystrix.Api
+namespace VMware.Tas.Steeltoe.Core.Hystrix.Api
 {
     public class Startup
     {
@@ -27,11 +28,11 @@ namespace Pcf.Steeltoe.Dotnet.Core.Hystrix.Api
 
             services.AddDistributedRedisCache(Configuration);
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {

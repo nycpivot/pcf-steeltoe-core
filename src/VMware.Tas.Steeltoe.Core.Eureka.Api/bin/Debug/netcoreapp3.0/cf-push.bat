@@ -1,12 +1,12 @@
-cf target -s pcf-steeltoe
+cf target -s tas-steeltoe-core
 pause
 @cls
 
-cf unbind-service pcf-steeltoe-core-eureka-api pcf-service-registry
+cf unbind-service tas-steeltoe-core-eureka-api tas-service-registry
 pause
 @cls
 
-cf delete pcf-steeltoe-core-eureka-api -r -f
+cf delete tas-steeltoe-core-eureka-api -r -f
 pause
 @cls
 

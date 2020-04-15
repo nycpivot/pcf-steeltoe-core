@@ -1,11 +1,11 @@
 ﻿using Microsoft.Extensions.Caching.Distributed;
 using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
-using Pcf.Steeltoe.Dotnet.Core.Hystrix.Api.Domain;
+using VMware.Tas.Steeltoe.Core.Hystrix.Api.Domain;
 using System;
 using System.Collections.Generic;
 
-namespace Pcf.Steeltoe.Dotnet.Core.Hystrix.Api.Services
+namespace VMware.Tas.Steeltoe.Core.Hystrix.Api.Services
 {
     public class ProductsService : IProductsService
     {

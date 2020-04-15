@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Steeltoe.Extensions.Configuration.CloudFoundry;
 
-namespace Pcf.Steeltoe.Dotnet.Core.Hystrix.Api
+namespace VMware.Tas.Steeltoe.Core.Hystrix.Api
 {
     public class Program
     {
@@ -13,7 +13,6 @@ namespace Pcf.Steeltoe.Dotnet.Core.Hystrix.Api
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseCloudFoundryHosting()
                 .AddCloudFoundry()
                 .UseStartup<Startup>()
                 .Build();

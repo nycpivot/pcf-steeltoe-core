@@ -1,0 +1,6 @@
+C:\Projects\pcf-steeltoe-core\src\VMware.Tas.Steeltoe.Core.Hystrix.Api\obj\Release\netcoreapp3.0\VMware.Tas.Steeltoe.Core.Hystrix.Api.csprojAssemblyReference.cache
+C:\Projects\pcf-steeltoe-core\src\VMware.Tas.Steeltoe.Core.Hystrix.Api\obj\Release\netcoreapp3.0\staticwebassets\VMware.Tas.Steeltoe.Core.Hystrix.Api.StaticWebAssets.Manifest.cache
+C:\Projects\pcf-steeltoe-core\src\VMware.Tas.Steeltoe.Core.Hystrix.Api\obj\Release\netcoreapp3.0\staticwebassets\VMware.Tas.Steeltoe.Core.Hystrix.Api.StaticWebAssets.xml
+C:\Projects\pcf-steeltoe-core\src\VMware.Tas.Steeltoe.Core.Hystrix.Api\obj\Release\netcoreapp3.0\VMware.Tas.Steeltoe.Core.Hystrix.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Projects\pcf-steeltoe-core\src\VMware.Tas.Steeltoe.Core.Hystrix.Api\obj\Release\netcoreapp3.0\VMware.Tas.Steeltoe.Core.Hystrix.Api.AssemblyInfoInputs.cache
+C:\Projects\pcf-steeltoe-core\src\VMware.Tas.Steeltoe.Core.Hystrix.Api\obj\Release\netcoreapp3.0\VMware.Tas.Steeltoe.Core.Hystrix.Api.AssemblyInfo.cs

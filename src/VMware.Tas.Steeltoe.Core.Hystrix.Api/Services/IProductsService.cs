@@ -1,7 +1,7 @@
-﻿using Pcf.Steeltoe.Dotnet.Core.Hystrix.Api.Domain;
+﻿using VMware.Tas.Steeltoe.Core.Hystrix.Api.Domain;
 using System.Collections.Generic;
 
-namespace Pcf.Steeltoe.Dotnet.Core.Hystrix.Api.Services
+namespace VMware.Tas.Steeltoe.Core.Hystrix.Api.Services
 {
     public interface IProductsService
     {

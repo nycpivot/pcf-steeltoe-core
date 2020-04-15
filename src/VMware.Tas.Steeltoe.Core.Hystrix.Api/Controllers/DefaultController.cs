@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Pcf.Steeltoe.Dotnet.Core.Hystrix.Api.Services;
+using VMware.Tas.Steeltoe.Core.Hystrix.Api.Services;
 using System;
 
-namespace Pcf.Steeltoe.Dotnet.Core.Hystrix.Api.Controllers
+namespace VMware.Tas.Steeltoe.Core.Hystrix.Api.Controllers
 {
     [Produces("application/json")]
     [Route("[controller]")]

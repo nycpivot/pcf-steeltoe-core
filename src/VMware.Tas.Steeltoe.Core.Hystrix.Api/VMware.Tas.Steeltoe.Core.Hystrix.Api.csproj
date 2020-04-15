@@ -5,6 +5,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Steeltoe.CloudFoundry.ConnectorCore" Version="2.4.3" />
+    <PackageReference Include="Steeltoe.Discovery.ClientCore" Version="2.4.3" />
+    <PackageReference Include="Steeltoe.Extensions.Configuration.CloudFoundryCore" Version="2.4.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="cf-push.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="manifest.yml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

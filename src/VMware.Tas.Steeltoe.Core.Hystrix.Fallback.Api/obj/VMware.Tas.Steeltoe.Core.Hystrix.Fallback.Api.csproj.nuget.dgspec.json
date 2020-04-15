@@ -1,0 +1,81 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Projects\\pcf-steeltoe-core\\src\\VMware.Tas.Steeltoe.Core.Hystrix.Fallback.Api\\VMware.Tas.Steeltoe.Core.Hystrix.Fallback.Api.csproj": {}
+  },
+  "projects": {
+    "C:\\Projects\\pcf-steeltoe-core\\src\\VMware.Tas.Steeltoe.Core.Hystrix.Fallback.Api\\VMware.Tas.Steeltoe.Core.Hystrix.Fallback.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\pcf-steeltoe-core\\src\\VMware.Tas.Steeltoe.Core.Hystrix.Fallback.Api\\VMware.Tas.Steeltoe.Core.Hystrix.Fallback.Api.csproj",
+        "projectName": "VMware.Tas.Steeltoe.Core.Hystrix.Fallback.Api",
+        "projectPath": "C:\\Projects\\pcf-steeltoe-core\\src\\VMware.Tas.Steeltoe.Core.Hystrix.Fallback.Api\\VMware.Tas.Steeltoe.Core.Hystrix.Fallback.Api.csproj",
+        "packagesPath": "C:\\Users\\mjames\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\pcf-steeltoe-core\\src\\VMware.Tas.Steeltoe.Core.Hystrix.Fallback.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\mjames\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Steeltoe.CloudFoundry.Connector.EFCore": {
+              "target": "Package",
+              "version": "[2.4.3, )"
+            },
+            "Steeltoe.Discovery.ClientCore": {
+              "target": "Package",
+              "version": "[2.4.3, )"
+            },
+            "Steeltoe.Extensions.Configuration.CloudFoundryCore": {
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

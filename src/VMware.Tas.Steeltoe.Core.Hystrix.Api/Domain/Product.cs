@@ -1,4 +1,4 @@
-﻿namespace Pcf.Steeltoe.Dotnet.Core.Hystrix.Api.Domain
+﻿namespace VMware.Tas.Steeltoe.Core.Hystrix.Api.Domain
 {
     public class Product
     {

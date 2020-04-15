@@ -14,7 +14,6 @@ namespace VMware.Tas.Steeltoe.Core.Eureka.Api
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                //.UseCloudFoundryHosting()
                 .AddCloudFoundry()
                 .UseStartup<Startup>()
                 .Build();
