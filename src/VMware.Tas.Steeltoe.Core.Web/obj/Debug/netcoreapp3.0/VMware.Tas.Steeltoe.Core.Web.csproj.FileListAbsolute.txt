@@ -64,3 +64,4 @@ C:\Projects\pcf-steeltoe-core\src\VMware.Tas.Steeltoe.Core.Web\obj\Debug\netcore
 C:\Projects\pcf-steeltoe-core\src\VMware.Tas.Steeltoe.Core.Web\obj\Debug\netcoreapp3.0\Razor\Views\Options\Index.cshtml.g.cs
 C:\Projects\pcf-steeltoe-core\src\VMware.Tas.Steeltoe.Core.Web\bin\Debug\netcoreapp3.0\cf-push.bat
 C:\Projects\pcf-steeltoe-core\src\VMware.Tas.Steeltoe.Core.Web\bin\Debug\netcoreapp3.0\manifest.yml
+C:\Projects\pcf-steeltoe-core\src\VMware.Tas.Steeltoe.Core.Web\obj\Debug\netcoreapp3.0\Razor\Views\Shared\__Layout.cshtml.g.cs

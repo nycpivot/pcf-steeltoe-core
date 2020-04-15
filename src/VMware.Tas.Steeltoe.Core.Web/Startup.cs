@@ -27,42 +27,42 @@ namespace VMware.Tas.Steeltoe.Core.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //((IConfigurationRoot)Configuration).AutoRefresh(TimeSpan.FromSeconds(10));
+            ((IConfigurationRoot)Configuration).AutoRefresh(TimeSpan.FromSeconds(10));
 
-            ////services.Configure<CookiePolicyOptions>(options =>
-            ////{
-            ////    // This lambda determines whether user consent for non-essential cookies is needed for a given request.
-            ////    options.CheckConsentNeeded = context => true;
-            ////    options.MinimumSameSitePolicy = SameSiteMode.None;
-            ////});
-
-            ////configuration
-            //services.AddOptions();
-            //services.ConfigureCloudFoundryOptions(Configuration);
-            ////services.ConfigureCloudFoundryService<ConfigServerOptions>(Configuration, "tas-config-server");
-            //services.ConfigureCloudFoundryService<CupsOptions>(Configuration, "tas-cups-database");
-
-            ////discovery
-            //services.AddDiscoveryClient(Configuration);
-
-            ////hystrix/circuit breaker
-            //services.AddHystrixCommand<HystrixWishlistCommand>(
-            //    "tas-steeltoe-core-web", Configuration);
-
-            //services.AddSingleton<IEurekaService, EurekaService>();
-            //services.AddSingleton<IHystrixService, HystrixService>();
-
-            //services.AddDistributedMemoryCache();
-            //services.AddSession(options =>
+            //services.Configure<CookiePolicyOptions>(options =>
             //{
-            //    options.IdleTimeout = new TimeSpan(0, 30, 0);
+            //    // This lambda determines whether user consent for non-essential cookies is needed for a given request.
+            //    options.CheckConsentNeeded = context => true;
+            //    options.MinimumSameSitePolicy = SameSiteMode.None;
             //});
 
-            // services.UseBreadcrumbs(GetType().Assembly);
+            //configuration
+            services.AddOptions();
+            services.ConfigureCloudFoundryOptions(Configuration);
+            //services.ConfigureCloudFoundryService<ConfigServerOptions>(Configuration, "tas-config-server");
+            services.ConfigureCloudFoundryService<CupsOptions>(Configuration, "tas-cups-database");
+
+            //discovery
+            services.AddDiscoveryClient(Configuration);
+
+            //hystrix/circuit breaker
+            services.AddHystrixCommand<HystrixWishlistCommand>(
+                "tas-steeltoe-core-web", Configuration);
+
+            services.AddSingleton<IEurekaService, EurekaService>();
+            services.AddSingleton<IHystrixService, HystrixService>();
+
+            services.AddDistributedMemoryCache();
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = new TimeSpan(0, 30, 0);
+            });
+
+            //services.UseBreadcrumbs(GetType().Assembly);
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
 
-            services.AddControllers();
+            services.AddControllersWithViews();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -72,8 +72,14 @@ namespace VMware.Tas.Steeltoe.Core.Web
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            else
+            {
+                app.UseExceptionHandler("/Home/Error");
+                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+                app.UseHsts();
+            }
             app.UseHttpsRedirection();
+            app.UseStaticFiles();
 
             app.UseRouting();
 
@@ -81,10 +87,12 @@ namespace VMware.Tas.Steeltoe.Core.Web
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Home}/{action=Index}/{id?}");
             });
 
-            //app.UseDiscoveryClient();
+            app.UseDiscoveryClient();
         }
     }
 }
