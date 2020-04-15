@@ -1,0 +1,29 @@
+﻿<script type="text/javascript">
+    $(document).ready(function (){
+        $('#crash').click(function () {
+            $.ajax({
+                method: "get",
+                url: "/hystrix/delete",
+                success: function (data) {
+                    alert("Unable to get your wishlist. Loading all products...");
+                    location.reload();
+                }
+            });
+        })
+    });
+</script>
+
+<h2>Hystrix - Circuit Breaker</h2>
+
+<a id="crash" href="#">Crash</a>
+
+<table class="table table-striped">
+    @foreach (var item in ViewBag.Products)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Price</td>
+            <td><img src="~/img/@item.Image" style="width: 100px; height: 100px;" /></td>
+        </tr>
+    }
+</table>

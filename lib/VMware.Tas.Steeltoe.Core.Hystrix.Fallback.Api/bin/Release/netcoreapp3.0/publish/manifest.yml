@@ -1,0 +1,9 @@
+﻿---
+applications:
+-   name: tas-steeltoe-core-hystrix-fallback-api
+    buildpack: dotnet_core_buildpack
+    disk_quota: 512M
+    memory: 512M
+    services:
+    -   tas-service-registry
+    -   tas-cups-sqlserver-products

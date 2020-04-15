@@ -1,0 +1,85 @@
+﻿<script type="text/javascript">
+    $(document).ready(function (){
+        $('#crash').click(function () {
+            $.ajax({
+                method: "get",
+                url: "/eureka/delete",
+                success: function (data) {
+                    alert("Come back to this page in a minute or two.");
+                    document.location.href = "/";
+                }
+            });
+        })
+    });
+</script>
+
+<h2>Eureka - Service Discovery</h2>
+
+<br />
+<br />
+
+<div>
+    <table style="width: 75%;">
+        <tr>
+            <td style="width: 20%;">
+                <div style="text-align: center;">
+                    <img style="width: 100px; height: 100px;" src="~/img/web-server.png" />
+                </div>
+            </td>
+            <td>
+                <div style="text-align: center;">
+                    <img src="~/img/line.png" />
+                </div>
+            </td>
+            <td style="width: 20%;">
+                <div style="text-align: center;">
+                    <img style="width: 100px; height: 100px;" src="~/img/web-server.png" />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="vertical-align: top;">
+                <div style="text-align: center;">
+                    <br />
+                    <div style="text-decoration: underline;">Web</div>
+                    <div style="font-style: italic;">pcf-steeltoe-dotnet-core-web</div>
+                    <br />
+                    <div style="font-weight: bold;">@ViewBag.ClientIP</div>
+                </div>
+            </td>
+            <td style="vertical-align: top;">
+                <br />
+                <div style="text-align: center;">
+                    <a href="http://pcf-steeltoe-dotnet-core-eureka-api.cfapps.io/app/" target="_blank">
+                        http://pcf-steeltoe-dotnet-core-eureka-api/app/
+                    </a>
+                </div>
+            </td>
+            <td style="vertical-align: top;">
+                <div style="text-align: center;">
+                    <br />
+                    <div style="text-decoration: underline;">Service</div>
+                    <div style="font-style: italic;">pcf-steeltoe-dotnet-core-eureka-api</div>
+                    <br />
+                    @foreach (var ip in ViewBag.UsedIPs)
+                    {
+                        <div style="text-decoration: line-through;">@ip</div>
+                    }
+                    <div style="font-weight: bold;">@ViewBag.ServiceIP</div>
+                    <br />
+                    <a id="crash" href="#">Crash</a>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+</div>

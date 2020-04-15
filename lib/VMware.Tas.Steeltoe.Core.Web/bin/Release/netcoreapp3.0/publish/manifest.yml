@@ -1,0 +1,13 @@
+﻿---
+applications:
+-   name: pcf-steeltoe-dotnet-core-web
+    buildpack: dotnet_core_buildpack
+    disk_quota: 512M
+    memory: 512M
+    services:
+    -   pcf-config-server
+    -   pcf-service-registry
+    -   pcf-circuit-breaker-dashboard
+    -   pcf-cups-database
+    env:
+        ASPNETCORE_ENVIRONMENT: production

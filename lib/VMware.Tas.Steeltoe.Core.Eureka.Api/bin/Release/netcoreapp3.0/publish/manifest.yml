@@ -1,8 +1,8 @@
 ﻿---
 applications:
--   name: pcf-steeltoe-core-eureka-api
+-   name: tas-steeltoe-core-eureka-api
     buildpack: dotnet_core_buildpack
     disk_quota: 512M
     memory: 512M
     services:
-    -   pcf-service-registry
+    -   tas-service-registry
